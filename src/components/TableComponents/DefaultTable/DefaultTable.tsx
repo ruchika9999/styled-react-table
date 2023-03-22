@@ -10,9 +10,9 @@ export interface Operations {
   availability: string;
 }
 
-export type TablePropsType = {
+export interface TablePropsType {
   tableData: Operations[];
-};
+}
 
 const headers = [
   {

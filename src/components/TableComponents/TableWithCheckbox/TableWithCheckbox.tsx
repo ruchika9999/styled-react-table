@@ -10,11 +10,13 @@ export interface Companies {
   companyName: string;
 }
 
-export type TablePropsType = {
+export interface TablePropsType  {
   tableCaption?: string;
   tableData: Companies[];
   handleSelected: (data: Companies[]) => void;
 };
+
+
 
 const headers = [
   { name: 'BRN', textAlign: TextAlign.START, width: 15 },

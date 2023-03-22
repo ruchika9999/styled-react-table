@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "styled-react-table",
-  "version": "2.2.1",
+  "name": "react-styled-table",
+  "version": "1.0.4",
   "description": "",
   "main": "build/index.js",
   "files": [
@@ -20,13 +20,14 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006"
   },
+  
   "bugs": {
-    "url": "https://github.com/ruchika9999/react-table/issues"
+    "url": "https://github.com/ruchika9999/styled-react-table/issues"
   },
-  "homepage": "https://github.com/ruchika9999/react-table#readme",
+  "homepage": "https://github.com/ruchika9999/styled-react-table#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruchika9999/react-table.git"
+    "url": "git+https://github.com/ruchika9999/styled-react-table.git"
   },
   "author": "Ruchika Gamage",
   "license": "MIT",

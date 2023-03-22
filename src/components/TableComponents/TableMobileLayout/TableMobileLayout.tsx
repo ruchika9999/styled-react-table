@@ -10,9 +10,9 @@ export interface Country {
   rate: string;
 }
 
-export type TablePropsType = {
+export interface TablePropsType {
   tableData: Country[];
-};
+}
 
 const header = [
   {

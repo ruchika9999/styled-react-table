@@ -11,9 +11,9 @@ export interface Operations {
   [key: string]: string; // add an index signature to allow string indexing
 }
 
-export type TablePropsType = {
+export interface TablePropsType {
   tableData: Operations[];
-};
+}
 
 const TableWithSorting: React.FC<TablePropsType> = (props) => {
   const [sortColumn, setSortColumn] = useState<number | null>(null);

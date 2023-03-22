@@ -36,6 +36,9 @@ export const SortButton = styled.button<{ requiredSpace: number }>`
   justify-content: center;
   margin-left: 4px;
   transition: all 0.5s ease-out;
+  ${(props) => props.theme.tableStyle.breakpoints.mobile} {
+    top: -2px;
+  }
   &: hover {
     background-color: ${(props) =>
       props.theme.tableStyle.colors.primaryColorScaleTwo};

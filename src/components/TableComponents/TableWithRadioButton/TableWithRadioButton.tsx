@@ -13,10 +13,10 @@ export interface Users {
   penalty: string;
   company: string;
 }
-export type TablePropsType = {
+export interface TablePropsType {
   tableData: Users[];
   handleSelected: (data: Users) => void;
-};
+}
 
 const defaultValue = {
   id: '',
