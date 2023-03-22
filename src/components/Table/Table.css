@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Avenir;
+    src: local("Avenir"),
+      url(./../font/Avenir_Heavy.otf) format("otf");
+  }
+
+  body {
+    margin: 0;
+    font-family: Avenir;
+  }
