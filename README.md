@@ -102,4 +102,4 @@ export default App;
 
 ```
 
-[a Demo](https://z7rric-3000.csb.app/)
+[Demo](https://z7rric-3000.csb.app/)
