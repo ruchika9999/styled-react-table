@@ -4,7 +4,7 @@
 ```bash
 npm run storybook
 ```
-
+![Screenshot 2023-03-23 at 17 00 41](https://user-images.githubusercontent.com/54837875/227153679-cbd0fe40-9a71-4736-a989-e505da0c7293.png)
 
 - Example Code
 
