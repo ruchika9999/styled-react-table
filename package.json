@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "react-styled-table",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "",
   "main": "build/index.js",
   "files": [

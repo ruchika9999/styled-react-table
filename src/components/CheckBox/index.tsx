@@ -13,13 +13,14 @@ interface CheckBoxProps {
 
 export const Checkbox: React.FC<CheckBoxProps> = ({ id, onSelectRow }) => {
   return (
-    <CheckboxContainer>
+    <CheckboxContainer data-testid={`checkbox-${id}`}>
       <StyledCheckboxInput
         type="checkbox"
         id={id}
         onClick={() => onSelectRow(id)}
+        data-testid={`checkbox-input-${id}`}
       />
-      <CheckboxLabel htmlFor={id} />
+      <CheckboxLabel htmlFor={id}/>
     </CheckboxContainer>
   );
 };

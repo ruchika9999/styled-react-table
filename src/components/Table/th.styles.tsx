@@ -28,7 +28,7 @@ export const SortButton = styled.button<{ requiredSpace: number }>`
   border-radius: 50px;
   position: absolute;
   left: ${(props) => props.requiredSpace + 25 + 'px'};
-  bottom: 8px;
+  bottom: 10px;
 
   cursor: pointer;
   display: flex;

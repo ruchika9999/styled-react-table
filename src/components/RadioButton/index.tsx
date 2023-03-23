@@ -9,16 +9,22 @@ interface RadioProps {
 }
 
 export const Radio: React.FC<RadioProps> = ({ id, onSelectRow, selectedRowId }) => {
+
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onSelectRow(event.target.value);
+  };
+
   return (
-    <RadioContainer>
+    <RadioContainer data-testid={`radioBox-${id}`}>
       <StyledRadioInput
         type="radio"
         id={id}
-        onClick={() => onSelectRow(id)}
+        onChange={handleRadioChange}
         checked={selectedRowId === id}
+        value={id}
+        data-testid={`radioBox-input-${id}`}
       />
-      <RadioLabel htmlFor={id} className="myradio__label" />
+      <RadioLabel htmlFor={id} />
     </RadioContainer>
   );
 };
-
