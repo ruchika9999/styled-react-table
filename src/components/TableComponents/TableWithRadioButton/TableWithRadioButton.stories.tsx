@@ -1,3 +1,4 @@
+import { ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import TableWithRadioButton from './TableWithRadioButton';
@@ -101,17 +102,13 @@ export default {
   },
 };
 
-export const Template = () => (
-  <TableWithRadioButton
-    handleSelected={(v) => console.log('selected value', v)}
-    tableData={operations}
-  />
+const Template: ComponentStory<typeof TableWithRadioButton> = (args) => (
+  <TableWithRadioButton {...args} />
 );
 
-// export const TableWithRadioButton = Template.bind({});
+export const Table = Template.bind({});
 
-// TableWithRadioButton.args = {
-//   tableData: operations,
-//   selectionType: TableSelectType.SINGLE,
-//   handleSelected: (v) => console.log('selected value', v),
-// };
+Table.args = {
+  tableData: operations,
+  handleSelected: (v) => console.log('selected values', v),
+};

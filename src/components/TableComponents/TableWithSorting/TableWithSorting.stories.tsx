@@ -1,3 +1,4 @@
+import { ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import TableWithSorting from './TableWithSorting';
@@ -61,4 +62,12 @@ export default {
   },
 };
 
-export const Template = () => <TableWithSorting tableData={operations} />;
+const Template: ComponentStory<typeof TableWithSorting> = (args) => (
+  <TableWithSorting {...args} />
+);
+
+export const Table = Template.bind({});
+
+Table.args = {
+  tableData: operations,
+};

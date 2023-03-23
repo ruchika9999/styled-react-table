@@ -1,6 +1,7 @@
+import { ComponentStory } from '@storybook/react';
 import React from 'react';
 
-import DefaultTable from './DefaultTable';
+import DefaultStoryTable from './DefaultTable';
 
 const operations = [
   {
@@ -55,10 +56,17 @@ const operations = [
 
 export default {
   title: 'Tables/BasicDesign',
-  component: DefaultTable,
+  component: DefaultStoryTable,
   argTypes: {
     tableData: operations,
   },
 };
+const Template: ComponentStory<typeof DefaultStoryTable> = (args) => (
+  <DefaultStoryTable {...args} />
+);
 
-export const Template = () => <DefaultTable tableData={operations} />;
+export const Table = Template.bind({});
+
+Table.args = {
+  tableData: operations,
+};

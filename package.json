@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "react-styled-table",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "build/index.js",
   "files": [
@@ -18,9 +18,9 @@
     "lint": "npm-run-all lint:ts lint:styles",
     "format": "prettier --write .",
     "semantic-release": "semantic-release",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  
   "bugs": {
     "url": "https://github.com/ruchika9999/styled-react-table/issues"
   },
@@ -32,6 +32,7 @@
   "author": "Ruchika Gamage",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.21.3",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
@@ -40,17 +41,21 @@
     "@semantic-release/github": "^8.0.6",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/builder-webpack5": "^6.5.12",
-    "@storybook/manager-webpack5": "^6.5.12",
-    "@storybook/react": "^6.5.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/react": "^12.1.5",
     "@types/jest": "^29.1.2",
     "@types/react": "^17.0.18",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "babel-loader": "^8.3.0",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",

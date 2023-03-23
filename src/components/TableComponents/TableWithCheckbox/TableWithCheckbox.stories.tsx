@@ -1,3 +1,4 @@
+import { ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import TableWithCheckbox from './TableWithCheckbox';
@@ -64,10 +65,13 @@ export default {
   },
 };
 
-export const Template = () => (
-  <TableWithCheckbox
-    // eslint-disable-next-line no-console
-    handleSelected={(v) => console.log('selected values', v)}
-    tableData={operations}
-  />
+const Template: ComponentStory<typeof TableWithCheckbox> = (args) => (
+  <TableWithCheckbox {...args} />
 );
+
+export const Table = Template.bind({});
+
+Table.args = {
+  tableData: operations,
+  handleSelected: (v) => console.log('selected values', v),
+};

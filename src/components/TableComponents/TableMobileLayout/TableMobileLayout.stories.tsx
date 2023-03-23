@@ -1,3 +1,4 @@
+import { ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import TableMobileLayout from './TableMobileLayout';
@@ -15,6 +16,7 @@ const operations = [
   { id: '534534535453545', country: 'Germany', mins: '300', rate: '$0.04' },
 ];
 
+
 export default {
   title: 'Tables/TableMobileLayoutTwo',
   component: TableMobileLayout,
@@ -22,8 +24,12 @@ export default {
     tableData: operations,
   },
 };
+const Template: ComponentStory<typeof TableMobileLayout> = (args) => (
+  <TableMobileLayout {...args} />
+);
 
-export const Template = () => <TableMobileLayout tableData={operations}/>;
+export const Table = Template.bind({});
 
-
-
+Table.args = {
+  tableData: operations,
+};
